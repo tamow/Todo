@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mycompany.todo.jdbc.mapper.TodoMapper">
+
+    <select id="getList" resultType="com.mycompany.todo.jdbc.entiry.Todo">
+        SELECT id, title, memo
+        FROM todo
+    </select>
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO todo (title, memo)
+        VALUES (#{title}, #{memo})
+    </insert>
+
+    <update id="update">
+        UPDATE todo SET
+        title = #{title},
+        memo = #{memo}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete">
+        DELETE FROM todo
+        WHERE id = #{id}
+    </delete>
+
+</mapper>
