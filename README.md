@@ -8,7 +8,6 @@ O/RマッパーはMybatisです。
 
 * JDK8u25
 * NetBeans8.1
-* AngularJs1.5
 * Tomcat8.0.32
 * Mac OS X
 
