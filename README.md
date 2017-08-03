@@ -20,10 +20,7 @@ O/RマッパーはMybatisです。
 
 ## Demo
 
-http://ec2-52-192-217-112.ap-northeast-1.compute.amazonaws.com/
-
 AWS EC2にAmazon Linuxのインスタンスを作成し、デプロイしました。
-適当にさわってみてください。
 
-
-
+~~http://ec2-52-192-217-112.ap-northeast-1.compute.amazonaws.com/~~
+現在停止中
